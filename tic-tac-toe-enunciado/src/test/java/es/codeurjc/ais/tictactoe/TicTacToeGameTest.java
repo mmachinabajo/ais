@@ -24,13 +24,13 @@ import org.mockito.ArgumentCaptor;
 
 import es.codeurjc.ais.tictactoe.TicTacToeGame.WinnerValue;
 
-class TicTacToeGameTest {
+public class TicTacToeGameTest {
 	
-	TicTacToeGame juego;
-	Connection navegador1;
-	Connection navegador2;
-	Player jugador1;
-	Player jugador2;
+	public TicTacToeGame juego;
+	public Connection navegador1;
+	public Connection navegador2;
+	public Player jugador1;
+	public Player jugador2;
 	
 	@BeforeEach
 	public void inicializacion() {
@@ -58,7 +58,7 @@ class TicTacToeGameTest {
 
 
 	@Test
-	void ganaPrimerJugador() {
+	public void ganaPrimerJugador() {
 		
 		// O | O | X
 		//   | X | O
@@ -100,7 +100,7 @@ class TicTacToeGameTest {
 	}
 	
 	@Test
-	void pierdePrimerJugador() {
+	public void pierdePrimerJugador() {
 		
 		// O |   | X
 		// O | X | 
@@ -140,7 +140,7 @@ class TicTacToeGameTest {
 	}
 	
 	@Test
-	void hayEmpate() {
+	public void hayEmpate() {
 		
 		// X | O | O
 		// O | X | X

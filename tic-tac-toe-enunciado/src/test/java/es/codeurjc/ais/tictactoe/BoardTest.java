@@ -8,10 +8,10 @@ import org.junit.jupiter.api.Test;
 
 import es.codeurjc.ais.tictactoe.TicTacToeGame.Cell;
 
-class BoardTest {
+public class BoardTest {
 
 	@Test
-	void ganaPrimerJugador() {
+	public void ganaPrimerJugador() {
 		
 		Board tablero = new Board();
 		
@@ -44,7 +44,7 @@ class BoardTest {
 	}
 	
 	@Test
-	void pierdePrimerJugador() {
+	public void pierdePrimerJugador() {
 		
 		Board tablero = new Board();
 		  
@@ -76,7 +76,7 @@ class BoardTest {
 	
 	
 	@Test
-	void hayEmpate() {
+	public void hayEmpate() {
 		
 		Board tablero = new Board();
 		  
