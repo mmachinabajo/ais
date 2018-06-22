@@ -44,7 +44,7 @@ public class WebAppTest {
 	}
 	
 	@Test
-	public void ganaPrimerJugador() throws InterruptedException {
+	public void ganaPrimerJugadorWebApp() throws InterruptedException {
 		
 		// O | O | X
 		//   | X | O
@@ -92,7 +92,7 @@ public class WebAppTest {
 	}
 	
 	@Test
-	public void pierdePrimerJugador() throws InterruptedException {
+	public void pierdePrimerJugadorWebApp() throws InterruptedException {
 		
 		// O |   | X
 		// O | X | 
@@ -138,7 +138,7 @@ public class WebAppTest {
 	}
 	
 	@Test
-	public void hayEmpate() throws InterruptedException {
+	public void hayEmpateWebApp() throws InterruptedException {
 		
 		// X | O | O
 		// O | X | X

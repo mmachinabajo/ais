@@ -46,7 +46,7 @@ public class TicTacToeGameTest {
 
 
 	@Test
-	public void ganaPrimerJugador() {
+	public void ganaPrimerJugadorTicTacToeGame() {
 		
 		// O | O | X
 		//   | X | O
@@ -88,7 +88,7 @@ public class TicTacToeGameTest {
 	}
 	
 	@Test
-	public void pierdePrimerJugador() {
+	public void pierdePrimerJugadorTicTacToeGame() {
 		
 		// O |   | X
 		// O | X | 
@@ -128,7 +128,7 @@ public class TicTacToeGameTest {
 	}
 	
 	@Test
-	public void hayEmpate() {
+	public void hayEmpateTicTacToeGame() {
 		
 		// X | O | O
 		// O | X | X

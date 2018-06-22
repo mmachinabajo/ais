@@ -8,7 +8,7 @@ import es.codeurjc.ais.tictactoe.TicTacToeGame.Cell;
 public class BoardTest {
 
 	@Test
-	public void ganaPrimerJugador() {
+	public void ganaPrimerJugadorBoard() {
 		
 		Board tablero = new Board();
 		
@@ -41,7 +41,7 @@ public class BoardTest {
 	}
 	
 	@Test
-	public void pierdePrimerJugador() {
+	public void pierdePrimerJugadorBoard() {
 		
 		Board tablero = new Board();
 		  
@@ -73,7 +73,7 @@ public class BoardTest {
 	
 	
 	@Test
-	public void hayEmpate() {
+	public void hayEmpateBoard() {
 		
 		Board tablero = new Board();
 		  
