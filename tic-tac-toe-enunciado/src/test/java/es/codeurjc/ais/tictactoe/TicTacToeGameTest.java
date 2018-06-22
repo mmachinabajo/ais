@@ -1,27 +1,15 @@
 package es.codeurjc.ais.tictactoe;
 
 import org.junit.jupiter.api.Test;
-
 import org.junit.jupiter.api.BeforeEach;
-
 import es.codeurjc.ais.tictactoe.TicTacToeGame.EventType;
-
 import static org.mockito.Mockito.*;
-
 import static org.assertj.core.api.Assertions.*;
-
 import static org.assertj.core.api.Assertions.assertThat;
-
-import static org.mockito.Matchers.eq;
-
 import static org.mockito.Mockito.mock;
-
 import static org.mockito.Mockito.reset;
-
 import static org.mockito.Mockito.verify;
-
 import org.mockito.ArgumentCaptor;
-
 import es.codeurjc.ais.tictactoe.TicTacToeGame.WinnerValue;
 
 public class TicTacToeGameTest {

@@ -4,10 +4,9 @@ import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import io.github.bonigarcia.wdm.ChromeDriverManager;
 import static org.assertj.core.api.Assertions.assertThat;
-import java.util.concurrent.TimeUnit;
+//import java.util.concurrent.TimeUnit;
 
 public class WebAppTest {
 
@@ -55,39 +54,39 @@ public class WebAppTest {
 		
 		driverUno.get(baseUrl);
 		driverDos.get(baseUrl);
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
         
 		driverUno.findElement(By.id("nickname")).clear();
 		driverUno.findElement(By.id("nickname")).sendKeys("Miguel");
 		driverUno.findElement(By.id("startBtn")).click();
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 
 		driverDos.findElement(By.id("nickname")).clear();
 		driverDos.findElement(By.id("nickname")).sendKeys("Pedro");	
 		driverDos.findElement(By.id("startBtn")).click();
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 
 		driverUno.findElement(By.id("cell-4")).click();
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 		driverDos.findElement(By.id("cell-1")).click();
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 		driverUno.findElement(By.id("cell-8")).click();
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 		driverDos.findElement(By.id("cell-0")).click();
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 		driverUno.findElement(By.id("cell-2")).click();
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 		driverDos.findElement(By.id("cell-5")).click();
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 		driverUno.findElement(By.id("cell-6")).click();
-		TimeUnit.SECONDS.sleep(3);
+		//TimeUnit.SECONDS.sleep(3);
 		
 		String mensajeWeb = driverUno.switchTo().alert().getText();
 
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 		System.out.println("mensajeWeb");
 		
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 		assertThat(mensajeWeb).isEqualTo(mensaje);
 	
 	}
@@ -103,37 +102,37 @@ public class WebAppTest {
 		
 		driverUno.get(baseUrl);
 		driverDos.get(baseUrl);
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
         
 		driverUno.findElement(By.id("nickname")).clear();
 		driverUno.findElement(By.id("nickname")).sendKeys("Miguel");
 		driverUno.findElement(By.id("startBtn")).click();
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 
 		driverDos.findElement(By.id("nickname")).clear();
 		driverDos.findElement(By.id("nickname")).sendKeys("Pedro");	
 		driverDos.findElement(By.id("startBtn")).click();
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 
 		driverUno.findElement(By.id("cell-2")).click();
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 		driverDos.findElement(By.id("cell-0")).click();
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 		driverUno.findElement(By.id("cell-4")).click();
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 		driverDos.findElement(By.id("cell-6")).click();
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 		driverUno.findElement(By.id("cell-7")).click();
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 		driverDos.findElement(By.id("cell-3")).click();
-		TimeUnit.SECONDS.sleep(3);
+		//TimeUnit.SECONDS.sleep(3);
 		
 		String mensajeWeb = driverUno.switchTo().alert().getText();
 
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 		System.out.println("mensajeWeb");
 		
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 		assertThat(mensajeWeb).isEqualTo(mensaje);
 	
 	}
@@ -149,43 +148,43 @@ public class WebAppTest {
 		
 		driverUno.get(baseUrl);
 		driverDos.get(baseUrl);
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
         
 		driverUno.findElement(By.id("nickname")).clear();
 		driverUno.findElement(By.id("nickname")).sendKeys("Miguel");
 		driverUno.findElement(By.id("startBtn")).click();
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 
 		driverDos.findElement(By.id("nickname")).clear();
 		driverDos.findElement(By.id("nickname")).sendKeys("Pedro");	
 		driverDos.findElement(By.id("startBtn")).click();
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 
 		driverUno.findElement(By.id("cell-0")).click();
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 		driverDos.findElement(By.id("cell-3")).click();
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 		driverUno.findElement(By.id("cell-4")).click();
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 		driverDos.findElement(By.id("cell-8")).click();
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 		driverUno.findElement(By.id("cell-6")).click();
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 		driverDos.findElement(By.id("cell-2")).click();
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 		driverUno.findElement(By.id("cell-5")).click();
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 		driverDos.findElement(By.id("cell-1")).click();
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 		driverUno.findElement(By.id("cell-7")).click();
-		TimeUnit.SECONDS.sleep(3);
+		//TimeUnit.SECONDS.sleep(3);
 		
 		String mensajeWeb = driverUno.switchTo().alert().getText();
 
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 		System.out.println(mensajeWeb);
 		
-		TimeUnit.SECONDS.sleep(1);
+		//TimeUnit.SECONDS.sleep(1);
 		assertThat(mensajeWeb).isEqualTo(mensaje);
 	
 	}

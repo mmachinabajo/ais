@@ -1,11 +1,8 @@
 package es.codeurjc.ais.tictactoe;
 
 import static org.junit.jupiter.api.Assertions.*;
-
 import java.util.Arrays;
-
 import org.junit.jupiter.api.Test;
-
 import es.codeurjc.ais.tictactoe.TicTacToeGame.Cell;
 
 public class BoardTest {
